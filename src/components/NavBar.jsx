@@ -7,16 +7,16 @@ class NavBar extends Component {
 			<NavBarDiv>
 				<NavBarUl>
 					<NavBarLi>
-						<NavBarLink href="#">Home</NavBarLink>
+						<NavBarLink href="/">Home</NavBarLink>
 					</NavBarLi>
 					<NavBarLi>
-						<NavBarLink href="#">Curriculum</NavBarLink>
+						<NavBarLink href="/curriculum">Curriculum</NavBarLink>
 					</NavBarLi>
 					<NavBarLi>
-						<NavBarLink href="#">Blog</NavBarLink>
+						<NavBarLink href="/blog">Blog</NavBarLink>
 					</NavBarLi>
 					<NavBarLi>
-						<NavBarLink href="#">Contact</NavBarLink>
+						<NavBarLink href="/contact">Contact</NavBarLink>
 					</NavBarLi>
 				</NavBarUl>
 			</NavBarDiv>
