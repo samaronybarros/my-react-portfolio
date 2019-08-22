@@ -7,7 +7,7 @@ class Breadcrumbs extends Component {
 		return (
 			<BreadCrumbsUl>
 				<BreadCrumbsLi>
-					<BreadCrumbsLink href="#">Home</BreadCrumbsLink>
+					<BreadCrumbsLink href="/">Home</BreadCrumbsLink>
 				</BreadCrumbsLi>
 				<BreadCrumbsLi>></BreadCrumbsLi>
 				<BreadCrumbsLi>{name}</BreadCrumbsLi>
