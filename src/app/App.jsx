@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { createGlobalStyle } from 'styled-components'
 
-import Home from '../pages/Home/view'
+import Home from '../pages/Home/container'
 
 const GlobalStyle = createGlobalStyle`
   body {
