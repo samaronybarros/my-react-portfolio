@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import Navbar from '../components/NavBar'
+import Cover from '../components/Cover'
 import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
@@ -14,7 +15,8 @@ class App extends Component {
     return (
       <React.Fragment>
         <GlobalStyle></GlobalStyle>
-        <Navbar></Navbar>
+        <Navbar />
+        <Cover />
       </React.Fragment> 
     )
   }
