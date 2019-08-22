@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { createGlobalStyle } from 'styled-components'
 
-import Curriculum from '../pages/Curriculum/container'
+import Router from './Routers'
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -15,7 +15,7 @@ class App extends Component {
 		return (
 			<React.Fragment>
 				<GlobalStyle />
-				<Curriculum />
+				<Router />
 			</React.Fragment>
 		)
 	}
