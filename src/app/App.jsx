@@ -1,7 +1,7 @@
-import React, {Component} from 'react'
-import Navbar from '../components/NavBar'
-import Cover from '../components/Cover'
+import React, { Component } from 'react'
 import { createGlobalStyle } from 'styled-components'
+
+import Home from '../pages/Home/view'
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -11,15 +11,14 @@ const GlobalStyle = createGlobalStyle`
 `
 
 class App extends Component {
-  render() {
-    return (
-      <React.Fragment>
-        <GlobalStyle></GlobalStyle>
-        <Navbar />
-        <Cover />
-      </React.Fragment> 
-    )
-  }
+	render() {
+		return (
+			<React.Fragment>
+				<GlobalStyle />
+				<Home />
+			</React.Fragment>
+		)
+	}
 }
 
 export default App
