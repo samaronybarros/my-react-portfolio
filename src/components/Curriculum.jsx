@@ -1,116 +1,332 @@
 import React, { Component } from 'react'
-import { MainDiv, MainH1, MainH2, MainH3, MainParagraph, CVPicture, MainLine } from '../styles/Main'
+import {
+	MainDiv,
+	MainH1,
+	MainH2,
+	MainH3,
+	MainCompany,
+	MainParagraph,
+	MainCurriculumInformation,
+	MainRole,
+	MainCompanyName,
+	MainCompanyDate,
+	CompanyDivPicture,
+	CVPicture,
+	MainLine,
+	CompanyImg,
+	CompanyDivRole,
+	MainCurriculumDescription,
+	MainDescription,
+	MainTextDescription,
+	MainButton,
+} from '../styles/Main'
 import picture from '../img/sam-picture.jpg'
 import Breadcrumbs from './Breadcrumbs'
 
+import keleya from '../img/company/keleya.jpeg'
+import campai from '../img/company/campai.png'
+import freelance from '../img/company/freelance.jpg'
+import objetive from '../img/company/objetive.png'
+import tdq from '../img/company/tdq.png'
+
+import uece from '../img/institution/uece.png'
+import estacio from '../img/institution/estacio.jpg'
+
 class Curriculum extends Component {
+	state = {
+		showCompanies: false,
+	}
+
+	handleShowCompanies = () => this.setState({ showCompanies: !this.state.showCompanies })
+
 	render() {
 		return (
 			<MainDiv>
-				<Breadcrumbs name={'Currículo'} />
+				<Breadcrumbs name={'Curriculum'} />
 
-				<MainH1>Currículo</MainH1>
+				<MainH1>Curriculum</MainH1>
 
-				<MainH2>Dados Pessoais</MainH2>
+				<MainH2>Personal Data</MainH2>
 				<MainLine />
-				<CVPicture src={picture} alt="Foto de Sam Barros" />
+				<CVPicture src={picture} alt="Sam Barros Picture" />
 
-				<MainH3>Nome:</MainH3>
+				<MainH3>Name:</MainH3>
+				<MainParagraph>Sam Barros</MainParagraph>
 
-				<MainParagraph>Seu Nome</MainParagraph>
+				<MainH3>Position:</MainH3>
+				<MainParagraph>Senior Software Engineer</MainParagraph>
 
-				<MainH3>Data de Nascimento:</MainH3>
+				<MainH3>Residence:</MainH3>
+				<MainParagraph>Berlin, Germany</MainParagraph>
 
-				<MainParagraph>Sua data de nascimento</MainParagraph>
+				<MainH3>Languages:</MainH3>
 
-				<MainH3>Residência:</MainH3>
+				<MainParagraph>Portuguese - Native</MainParagraph>
+				<MainParagraph>English - Advanced</MainParagraph>
+				<MainParagraph>French - Intermediate</MainParagraph>
+				<MainParagraph>Spanish - Basic</MainParagraph>
+				<MainParagraph>German - Basic</MainParagraph>
 
-				<MainParagraph>Sua cidade, país</MainParagraph>
-
-				<MainH3>Idiomas:</MainH3>
-
-				<MainParagraph>Português (Nativo)</MainParagraph>
-				<MainParagraph>Idioma 2</MainParagraph>
-				<MainParagraph>Idioma 3</MainParagraph>
-
-				<MainH2>Sobre Mim</MainH2>
+				<MainH2>About me</MainH2>
 				<MainLine />
 
 				<MainParagraph>
-					Neste espaço escreva uma história sobre sua carreira. Fale sobre sua trajetória, suas conquistas e
-					sobre o que você gosta de fazer. Pode incluir algo breve sobre o que você faz em seu tempo livre.
-					Veja o exemplo do meu currículo em
+					My name is Samarony Barros, but I am also known as Sam Barros. I'm a Senior Software Developer with
+					8+ years of experience, more specifically working with Java, PHP, JavaScript, C, and C++. I have
+					created systems and customizations to help companies to optimize their process and I have created
+					reports using Business Intelligence (BI) to support companies on making the best decision based on
+					real data, not only empirical data.
 				</MainParagraph>
 
 				<MainParagraph>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque ipsum vitae malesuada
-					ultrices. Proin suscipit nulla odio, sit amet cursus ipsum fringilla ac. Morbi et turpis odio.
-					Praesent diam ex, malesuada ornare neque et, placerat tincidunt nunc. Ut sit amet ex tincidunt,
-					viverra nisl vitae, aliquam purus. Nam purus dolor, maximus in quam sed, aliquam congue ipsum.
-					Integer eleifend id ante sed porta.
+					Nowadays, I'm responsible for designing, coding, unit testing and debugging application features as
+					specified, applying a keen eye for detail and managing and prioritizing goals to deliver
+					high-quality code. Besides, I also act as a Performance Mentor, coaching Developers to improve their
+					software development skills and how to become more performative in creating queries on databases.
 				</MainParagraph>
 
 				<MainParagraph>
-					Sed posuere sit amet mi ac rhoncus. Donec ac pretium nibh. Curabitur id nisi et lorem efficitur
-					molestie. Quisque diam nulla, pulvinar sit amet porttitor id, mollis viverra leo. Fusce in tellus
-					porttitor, suscipit turpis et, faucibus dui. Donec sit amet magna id nunc bibendum fermentum.
-					Praesent quam odio, venenatis non tellus eu, molestie luctus erat. Mauris eu ultricies metus.
+					In one of my personal projects, I'm working on the development of a tool using MERN Technology
+					(MongoDB, ExpressJS, ReactJS, and NodeJS). The other one is the development of management tools
+					using Spring Boot, Hibernate, REST, Ionic, JWT, S3, MySQL, and MongoDB.
 				</MainParagraph>
 
-				<MainH2>Educação</MainH2>
+				<MainParagraph>
+					In my entrepreneurial career, I had the opportunity to manage projects and different kinds of teams,
+					leading Developers, Consultants, and Designers. As an Entrepreneur, I turned myself into a
+					multidisciplinary and committed professional with the ability to adapt to new situations.
+				</MainParagraph>
+
+				<MainParagraph>
+					I'm proud to have created systems that have contributed to the success and growth of businesses. I'm
+					passionate about personal and professional enhancement. In that way, I'm looking for a challenging
+					opportunity focused on developing and improving the user experience and making a real impact on
+					people's lives.
+				</MainParagraph>
+
+				<MainParagraph>
+					If you think that I could add value to your network, add me as a contact. You can also find me at
+					samarony.barros@gmail.com and http://sambarros.com
+				</MainParagraph>
+
+				<MainH2>Work Experience</MainH2>
 				<MainLine />
 
-				<MainH3>data-Em andamento</MainH3>
+				<MainCompany>
+					<MainCurriculumInformation>
+						<CompanyDivPicture>
+							<CompanyImg src={keleya} />
+						</CompanyDivPicture>
+						<CompanyDivRole>
+							<MainRole>Senior Software Engineer</MainRole>
+							<MainCompanyName>Keleya</MainCompanyName>
+							<MainCompanyDate>Mar 2019 - Current</MainCompanyDate>
+							<MainCompanyDate>Berlin, Germany</MainCompanyDate>
+						</CompanyDivRole>
+					</MainCurriculumInformation>
+					<MainCurriculumDescription>
+						<MainDescription>Description</MainDescription>
+						<MainTextDescription>
+							In my entrepreneurial career, I had the opportunity to manage projects and different kinds
+							of teams, leading Developers, Consultants, and Designers. As an Entrepreneur, I turned
+							myself into a multidisciplinary and committed professional with the ability to adapt to new
+							situations.
+						</MainTextDescription>
+					</MainCurriculumDescription>
+				</MainCompany>
 
-				<MainParagraph>Curso/Mestrado/Universidade</MainParagraph>
+				<MainCompany>
+					<MainCurriculumInformation>
+						<CompanyDivPicture>
+							<CompanyImg src={campai} />
+						</CompanyDivPicture>
+						<CompanyDivRole>
+							<MainRole>Senior Software Engineer</MainRole>
+							<MainCompanyName>Keleya</MainCompanyName>
+							<MainCompanyDate>Mar 2019 - Current</MainCompanyDate>
+							<MainCompanyDate>Berlin, Germany</MainCompanyDate>
+						</CompanyDivRole>
+					</MainCurriculumInformation>
+					<MainCurriculumDescription>
+						<MainDescription>Description</MainDescription>
+						<MainTextDescription>
+							Developing a platform that makes the management of clubs and associations easy and
+							economical using ReactJS, NodeJS, Express, and MongoDB. Besides, developing the relationship
+							network among member and clubs using the same technologies above.
+						</MainTextDescription>
+					</MainCurriculumDescription>
+				</MainCompany>
 
-				<MainH3>data-data</MainH3>
+				<MainCompany>
+					<MainCurriculumInformation>
+						<CompanyDivPicture>
+							<CompanyImg src={freelance} />
+						</CompanyDivPicture>
+						<CompanyDivRole>
+							<MainRole>Senior Software Developer</MainRole>
+							<MainCompanyName>Freelancer</MainCompanyName>
+							<MainCompanyDate>Jul 2018 - Oct 2018</MainCompanyDate>
+							<MainCompanyDate>Fortaleza, Brazil</MainCompanyDate>
+						</CompanyDivRole>
+					</MainCurriculumInformation>
+					<MainCurriculumDescription>
+						<MainDescription>Description</MainDescription>
+						<MainTextDescription>
+							I was responsible for developing and architecting an integration model system using Java,
+							JPA, AdvPL, JSON and MS SQL, integrating a sales force app and the Protheus ERP (customized
+							or not), building a personalized solution.
+						</MainTextDescription>
+						<MainTextDescription>
+							I was also working on the development of a Smart Schedule Management System for Dentists,
+							remembering them and the patients about appointments, besides providing a medical records
+							system, admin panel, access everywhere and Dentists management reports. For this, I'm using
+							Javascript, PHP, HTML5, CSS3, Jquery, AJAX, and MySQL
+						</MainTextDescription>
+					</MainCurriculumDescription>
+				</MainCompany>
 
-				<MainParagraph>Curso/Mestrado/Universidade</MainParagraph>
+				<MainCompany>
+					<MainCurriculumInformation>
+						<CompanyDivPicture>
+							<CompanyImg src={objetive} />
+						</CompanyDivPicture>
+						<CompanyDivRole>
+							<MainRole>Lead Software Developer</MainRole>
+							<MainCompanyName>Objetive TI</MainCompanyName>
+							<MainCompanyDate>Feb 2016 - Jun 2018</MainCompanyDate>
+							<MainCompanyDate>Fortaleza, Brazil</MainCompanyDate>
+						</CompanyDivRole>
+					</MainCurriculumInformation>
+					<MainCurriculumDescription>
+						<MainDescription>Description</MainDescription>
+						<MainTextDescription>
+							Objective IT is a company founded and located in Fortaleza, Brazil, formed by professionals
+							trained in the most diverse areas of Technology, such as systems implementation,
+							development, and infrastructure.
+						</MainTextDescription>
+						<MainTextDescription>
+							I was responsible for designing and developing customized ERP (Protheus) solutions using
+							PHP, Javascript, AdvPL, Oracle and MS SQL.
+						</MainTextDescription>
+						<MainTextDescription>
+							I was also in charge of structuring and managing the area responsible for the Systems
+							Implementation Projects, acting as an interface between the company and the client.
+						</MainTextDescription>
+						<MainTextDescription>
+							Besides, I coached Development Teams and acted as Project Manager.
+						</MainTextDescription>
+					</MainCurriculumDescription>
+				</MainCompany>
 
-				<MainH3>data-data</MainH3>
+				<MainCompany>
+					<MainCurriculumInformation>
+						<CompanyDivPicture>
+							<CompanyImg src={tdq} />
+						</CompanyDivPicture>
+						<CompanyDivRole>
+							<MainRole>Lead Software Developer</MainRole>
+							<MainCompanyName>Tá de Quanto?</MainCompanyName>
+							<MainCompanyDate>Sep 2014 - Jan 2016</MainCompanyDate>
+							<MainCompanyDate>Fortaleza, Brazil</MainCompanyDate>
+						</CompanyDivRole>
+					</MainCurriculumInformation>
+					<MainCurriculumDescription>
+						<MainDescription>Description</MainDescription>
+						<MainTextDescription>
+							“Tá de quanto?” is a tool for consulting and comparing prices on Supermarkets, that is the
+							product developed by Dingo Innovations.
+						</MainTextDescription>
+						<MainTextDescription>
+							I was responsible for identifying the threats and technological opportunities and for
+							managing the teams in charge of the development of new solutions and technologies. I've
+							created a new high-efficiency web application solution for comparing and consulting the best
+							prices of products in supermarkets, improving system’s throughput and reliability, using
+							Java, PHP, Javascript, Shell Script and PostgreSQL.
+						</MainTextDescription>
+						<MainTextDescription>
+							As a co-founder, I was responsible for presenting the company in many startups, congresses,
+							and events.
+						</MainTextDescription>
+					</MainCurriculumDescription>
+				</MainCompany>
 
-				<MainParagraph>Curso/Mestrado/Universidade</MainParagraph>
+				{this.state.showCompanies && (
+					<React.Fragment>
+						<MainCompany>
+							<MainCurriculumInformation>
+								<CompanyDivPicture>
+									<CompanyImg src={tdq} />
+								</CompanyDivPicture>
+								<CompanyDivRole>
+									<MainRole>Lead Software Developer</MainRole>
+									<MainCompanyName>Tá de Quanto?</MainCompanyName>
+									<MainCompanyDate>Sep 2014 - Jan 2016</MainCompanyDate>
+									<MainCompanyDate>Fortaleza, Brazil</MainCompanyDate>
+								</CompanyDivRole>
+							</MainCurriculumInformation>
+							<MainCurriculumDescription>
+								<MainDescription>Description</MainDescription>
+								<MainTextDescription>
+									“Tá de quanto?” is a tool for consulting and comparing prices on Supermarkets, that
+									is the product developed by Dingo Innovations.
+								</MainTextDescription>
+								<MainTextDescription>
+									I was responsible for identifying the threats and technological opportunities and
+									for managing the teams in charge of the development of new solutions and
+									technologies. I've created a new high-efficiency web application solution for
+									comparing and consulting the best prices of products in supermarkets, improving
+									system’s throughput and reliability, using Java, PHP, Javascript, Shell Script and
+									PostgreSQL.
+								</MainTextDescription>
+								<MainTextDescription>
+									As a co-founder, I was responsible for presenting the company in many startups,
+									congresses, and events.
+								</MainTextDescription>
+							</MainCurriculumDescription>
+						</MainCompany>
+					</React.Fragment>
+				)}
 
-				<MainH2>Habilidades</MainH2>
+				<MainButton onClick={this.handleShowCompanies}>
+					{`Show ${this.state.showCompanies ? `less` : `more`} companies`}
+				</MainButton>
+
+				<MainH2>Education</MainH2>
 				<MainLine />
 
-				<MainH3>Tema 1</MainH3>
+				<MainCompany>
+					<MainCurriculumInformation>
+						<CompanyDivPicture>
+							<CompanyImg src={estacio} />
+						</CompanyDivPicture>
+						<CompanyDivRole>
+							<MainRole>Estácio</MainRole>
+							<MainCompanyName>MBA in Software Engineer</MainCompanyName>
+							<MainCompanyDate>2017 - 2019</MainCompanyDate>
+							<MainCompanyDate>Fortaleza, Brazil</MainCompanyDate>
+						</CompanyDivRole>
+					</MainCurriculumInformation>
+				</MainCompany>
 
-				<MainParagraph>Habilidade 1 / Habilidade 2...</MainParagraph>
+				<MainCompany>
+					<MainCurriculumInformation>
+						<CompanyDivPicture>
+							<CompanyImg src={uece} />
+						</CompanyDivPicture>
+						<CompanyDivRole>
+							<MainRole>State University of Ceara</MainRole>
+							<MainCompanyName>Computer Sicence</MainCompanyName>
+							<MainCompanyDate>2007 - 2012</MainCompanyDate>
+							<MainCompanyDate>Fortaleza, Brazil</MainCompanyDate>
+						</CompanyDivRole>
+					</MainCurriculumInformation>
+				</MainCompany>
 
-				<MainH3>Tema 1</MainH3>
-
-				<MainParagraph>Habilidade 1 / Habilidade 2...</MainParagraph>
-
-				<MainH3>Tema 1</MainH3>
-
-				<MainParagraph>Habilidade 1 / Habilidade 2...</MainParagraph>
-
-				<MainH3>Tema 1</MainH3>
-
-				<MainParagraph>Habilidade 1 / Habilidade 2...</MainParagraph>
-
-				<MainH2>Experiência de Trabalho</MainH2>
+				<MainH2>Contact</MainH2>
 				<MainLine />
 
-				<MainH3>data-data</MainH3>
-
-				<MainParagraph>Função - empresa - local</MainParagraph>
-
-				<MainH3>data-data</MainH3>
-
-				<MainParagraph>Função - empresa - local</MainParagraph>
-
-				<MainH3>data-data</MainH3>
-
-				<MainParagraph>Função - empresa - local</MainParagraph>
-
-				<MainH2>Contato</MainH2>
-				<MainLine />
-
-				<MainParagraph>seu e-mail aqui</MainParagraph>
-				<MainParagraph>seu telefone aqui</MainParagraph>
+				<MainParagraph>samarony.barros@gmail.com</MainParagraph>
+				<MainParagraph>+49 160 91970573</MainParagraph>
 			</MainDiv>
 		)
 	}
