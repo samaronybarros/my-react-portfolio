@@ -14,15 +14,15 @@ class Contact extends Component {
 			<MainDiv>
 				<Breadcrumbs name={'Contact'} />
 
-				<MainH1>Contato</MainH1>
+				<MainH1>Contact</MainH1>
 
 				<MainH3>E-mail:</MainH3>
-				<MainParagraph>Coloque aqui seu e-mail</MainParagraph>
+				<MainParagraph>samarony.barros@gmail.com</MainParagraph>
 
 				<MainH3>Telefone:</MainH3>
-				<MainParagraph>Coloque aqui seu telefone</MainParagraph>
+				<MainParagraph>+49 160 91970573</MainParagraph>
 
-				<MainH3>Redes Sociais:</MainH3>
+				<MainH3>Social Network:</MainH3>
 
 				<SocialLink href={'#'} target={'_blank'}>
 					<SocialImg src={facebook} />
