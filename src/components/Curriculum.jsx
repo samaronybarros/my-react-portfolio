@@ -23,16 +23,7 @@ import picture from '../img/sam-picture.jpg'
 import Breadcrumbs from './Breadcrumbs'
 import Button from './Button'
 
-import { 
-    keleya,
-    campai,
-    freelance,
-    objetive,
-    tdq,
-    mconsult,
-    totvs,
-    cco
-} from '../img/company'
+import { keleya, campai, samBarros, objetive, tdq, mconsult, totvs, cco } from '../img/company'
 
 import { uece, estacio } from '../img/institution'
 
@@ -164,7 +155,7 @@ class Curriculum extends Component {
 				<MainCompany>
 					<MainCurriculumInformation>
 						<CompanyDivPicture>
-							<CompanyImg src={freelance} />
+							<CompanyImg src={samBarros} />
 						</CompanyDivPicture>
 						<CompanyDivRole>
 							<MainRole>Senior Software Developer</MainRole>
@@ -363,11 +354,17 @@ class Curriculum extends Component {
 					</MainCurriculumInformation>
 				</MainCompany>
 
-				<MainH2>Contact</MainH2>
+				<MainH2>Technical Skills</MainH2>
 				<MainLine />
 
-				<MainParagraph>samarony.barros@gmail.com</MainParagraph>
-				<MainParagraph>+49 160 91970573</MainParagraph>
+				<MainH3>6+ years:</MainH3>
+				<MainParagraph>Java, PHP, Scrum, MS SQL, Oracle, MySql, and PostgreSQL.</MainParagraph>
+				<MainH3>5+ years:</MainH3>
+				<MainParagraph>JavaScript, NodeJS, ReactJS, MongoDB, Sequelize, and Bootstrap.</MainParagraph>
+				<MainH3>4+ years:</MainH3>
+				<MainParagraph>C, C++, Shell Script and Git.</MainParagraph>
+				<MainH3>2+ years:</MainH3>
+				<MainParagraph>Android, Ruby, Objective-C.</MainParagraph>
 			</MainDiv>
 		)
 	}
