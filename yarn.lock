@@ -5903,6 +5903,11 @@ loader-utils@1.2.3, loader-utils@^1.0.1, loader-utils@^1.0.2, loader-utils@^1.1.
     emojis-list "^2.0.0"
     json5 "^1.0.1"
 
+localized-strings@^0.2.3:
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/localized-strings/-/localized-strings-0.2.3.tgz#6caed1bc0476668331ed4e96729676ae8f7a0295"
+  integrity sha512-uWO3E2jDynMBsJIglBMhALO3f1DnfOFzCSoCt+fPLGx94PXU1KfbgBx04J4xfjPwozRowAHk8bfaw8bgeKTTCQ==
+
 locate-path@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/locate-path/-/locate-path-2.0.0.tgz#2b568b265eec944c6d9c0de9c3dbbbca0354cd8e"
