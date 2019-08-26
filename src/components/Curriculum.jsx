@@ -18,16 +18,19 @@ import {
 	MainCurriculumDescription,
 	MainDescription,
 	MainTextDescription,
-	MainButton,
 } from '../styles/Main'
 import picture from '../img/sam-picture.jpg'
 import Breadcrumbs from './Breadcrumbs'
+import Button from './Button'
 
 import keleya from '../img/company/keleya.jpeg'
 import campai from '../img/company/campai.png'
 import freelance from '../img/company/freelance.jpg'
 import objetive from '../img/company/objetive.png'
 import tdq from '../img/company/tdq.png'
+import mconsult from '../img/company/mconsult.png'
+import totvs from '../img/company/totvs.png'
+import cco from '../img/company/cco.png'
 
 import uece from '../img/institution/uece.png'
 import estacio from '../img/institution/estacio.jpg'
@@ -233,7 +236,7 @@ class Curriculum extends Component {
 					<MainCurriculumDescription>
 						<MainDescription>Description</MainDescription>
 						<MainTextDescription>
-							“Tá de quanto?” is a tool for consulting and comparing prices on Supermarkets, that is the
+							"Tá de quanto? is a tool for consulting and comparing prices on Supermarkets, that is the
 							product developed by Dingo Innovations.
 						</MainTextDescription>
 						<MainTextDescription>
@@ -255,41 +258,78 @@ class Curriculum extends Component {
 						<MainCompany>
 							<MainCurriculumInformation>
 								<CompanyDivPicture>
-									<CompanyImg src={tdq} />
+									<CompanyImg src={mconsult} />
 								</CompanyDivPicture>
 								<CompanyDivRole>
-									<MainRole>Lead Software Developer</MainRole>
-									<MainCompanyName>Tá de Quanto?</MainCompanyName>
-									<MainCompanyDate>Sep 2014 - Jan 2016</MainCompanyDate>
+									<MainRole>Software Developer</MainRole>
+									<MainCompanyName>Mconsult</MainCompanyName>
+									<MainCompanyDate>Apr 2014 - Aug 2014</MainCompanyDate>
 									<MainCompanyDate>Fortaleza, Brazil</MainCompanyDate>
 								</CompanyDivRole>
 							</MainCurriculumInformation>
 							<MainCurriculumDescription>
 								<MainDescription>Description</MainDescription>
 								<MainTextDescription>
-									“Tá de quanto?” is a tool for consulting and comparing prices on Supermarkets, that
-									is the product developed by Dingo Innovations.
+									MConsult is a company specialized in consulting on the Microsiga Protheus System
+									(Totvs) and Process Consulting.
 								</MainTextDescription>
 								<MainTextDescription>
-									I was responsible for identifying the threats and technological opportunities and
-									for managing the teams in charge of the development of new solutions and
-									technologies. I've created a new high-efficiency web application solution for
-									comparing and consulting the best prices of products in supermarkets, improving
-									system’s throughput and reliability, using Java, PHP, Javascript, Shell Script and
-									PostgreSQL.
-								</MainTextDescription>
-								<MainTextDescription>
-									As a co-founder, I was responsible for presenting the company in many startups,
-									congresses, and events.
+									I was responsible for customizing/modifying the customers' ERP to correct existing
+									errors, upgrade interfaces and improve performance, using Java, AdvPL, MS SQL and
+									Oracle.
 								</MainTextDescription>
 							</MainCurriculumDescription>
+						</MainCompany>
+
+						<MainCompany>
+							<MainCurriculumInformation>
+								<CompanyDivPicture>
+									<CompanyImg src={totvs} />
+								</CompanyDivPicture>
+								<CompanyDivRole>
+									<MainRole>Software Developer</MainRole>
+									<MainCompanyName>TOTVS</MainCompanyName>
+									<MainCompanyDate>Sep 2012 - Apr 2014</MainCompanyDate>
+									<MainCompanyDate>Fortaleza, Brazil</MainCompanyDate>
+								</CompanyDivRole>
+							</MainCurriculumInformation>
+							<MainCurriculumDescription>
+								<MainDescription>Description</MainDescription>
+								<MainTextDescription>
+									TOTVS is a Brazilian multinational company that provides business solutions for
+									companies of all sizes, providing management software solutions, collaboration and
+									productivity platforms, hardware and consulting services, with absolute leadership
+									in the SMB market in Latin America.
+								</MainTextDescription>
+								<MainTextDescription>
+									I was responsible for customizing the ERP (Protheus) depending on customer needs and
+									collect stakeholder requirements and submitted to the Project Manager, preparing
+									detailed reports concerning project specification activities. I worked, as well,
+									with data manipulation for system analysis, helping clients to make better
+									decisions, using Java, PHP, AdvPL, MS SQL and Oracle.
+								</MainTextDescription>
+							</MainCurriculumDescription>
+						</MainCompany>
+
+						<MainCompany>
+							<MainCurriculumInformation>
+								<CompanyDivPicture>
+									<CompanyImg src={cco} />
+								</CompanyDivPicture>
+								<CompanyDivRole>
+									<MainRole>Intern</MainRole>
+									<MainCompanyName>CCO/CLDO</MainCompanyName>
+									<MainCompanyDate>Sep 2010 - Aug 2012</MainCompanyDate>
+									<MainCompanyDate>Fortaleza, Brazil</MainCompanyDate>
+								</CompanyDivRole>
+							</MainCurriculumInformation>
 						</MainCompany>
 					</React.Fragment>
 				)}
 
-				<MainButton onClick={this.handleShowCompanies}>
-					{`Show ${this.state.showCompanies ? `less` : `more`} companies`}
-				</MainButton>
+				<Button onClick={this.handleShowCompanies}>
+					{`Show ${this.state.showCompanies ? `less companies ⤒` : `more companies ⤓`}`}
+				</Button>
 
 				<MainH2>Education</MainH2>
 				<MainLine />
