@@ -23,17 +23,18 @@ import picture from '../img/sam-picture.jpg'
 import Breadcrumbs from './Breadcrumbs'
 import Button from './Button'
 
-import keleya from '../img/company/keleya.jpeg'
-import campai from '../img/company/campai.png'
-import freelance from '../img/company/freelance.jpg'
-import objetive from '../img/company/objetive.png'
-import tdq from '../img/company/tdq.png'
-import mconsult from '../img/company/mconsult.png'
-import totvs from '../img/company/totvs.png'
-import cco from '../img/company/cco.png'
+import { 
+    keleya,
+    campai,
+    freelance,
+    objetive,
+    tdq,
+    mconsult,
+    totvs,
+    cco
+} from '../img/company'
 
-import uece from '../img/institution/uece.png'
-import estacio from '../img/institution/estacio.jpg'
+import { uece, estacio } from '../img/institution'
 
 class Curriculum extends Component {
 	state = {

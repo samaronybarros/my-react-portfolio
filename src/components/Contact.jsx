@@ -4,9 +4,7 @@ import { SocialImg, SocialLink } from '../styles/Contact'
 import Breadcrumbs from './Breadcrumbs'
 
 //https://www.iconfinder.com/iconsets/black-white-social-media
-import facebook from '../img/social/facebook.svg'
-import linkedin from '../img/social/linkedin.svg'
-import github from '../img/social/github.svg'
+import { facebook, linkedin, github } from '../img/social'
 
 class Contact extends Component {
 	render() {
@@ -19,7 +17,7 @@ class Contact extends Component {
 				<MainH3>E-mail:</MainH3>
 				<MainParagraph>samarony.barros@gmail.com</MainParagraph>
 
-				<MainH3>Telefone:</MainH3>
+				<MainH3>Phone:</MainH3>
 				<MainParagraph>+49 160 91970573</MainParagraph>
 
 				<MainH3>Social Network:</MainH3>
