@@ -41,6 +41,6 @@ export const NavBarLink = styled.a`
 	text-decoration: none;
 
 	&:hover {
-		color: ${S.colorOrange};
+		color: ${S.colorContrast};
 	}
 `

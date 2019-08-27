@@ -28,7 +28,7 @@ export const CoverMain = styled.div`
 `
 
 export const CoverSpan = styled.span`
-    color: ${S.colorOrange};
+    color: ${S.colorContrast};
     font-weight: 600;
 `
 

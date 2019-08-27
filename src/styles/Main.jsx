@@ -40,7 +40,7 @@ export const MainH2 = styled.h2`
 `
 
 export const MainH3 = styled.h3`
-	color: ${S.colorOrange};
+	color: ${S.colorContrast};
 	font-size: 12px;
 	text-transform: uppercase;
 	font-weight: normal;
@@ -108,7 +108,7 @@ export const MainCompanyDate = styled.p`
 export const MainCurriculumDescription = styled.div`width: 100%;`
 
 export const MainDescription = styled.p`
-	color: ${S.colorOrange};
+	color: ${S.colorContrast};
 	font-size: 12px;
 	text-align: left;
 	font-weight: 400;

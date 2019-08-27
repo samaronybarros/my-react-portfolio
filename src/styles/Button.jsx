@@ -4,7 +4,7 @@ import S from './constants'
 export const ButtonStyle = styled.button`
 	background-color: Transparent;
 	background-repeat: no-repeat;
-	color: ${S.colorOrange};
+	color: ${S.colorContrast};
 	border: none;
 	cursor: pointer;
 	overflow: hidden;

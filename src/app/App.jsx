@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { createGlobalStyle } from 'styled-components'
+import S from '../styles/constants'
 
 import Router from './Routers'
 
@@ -9,7 +10,7 @@ const GlobalStyle = createGlobalStyle`
 		padding: 0;
 	}
 	body {
-		background-color: #2b2b2b;
+		background-color: ${S.colorBackground};
 		font-family: 'Montserrat', sans-serif;
 	}
 `
