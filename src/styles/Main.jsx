@@ -125,3 +125,49 @@ export const MainTextDescription = styled.p`
 `
 
 export const MainButton = styled.button`font-size: 14px;`
+
+export const Miniature = styled.div`
+	height: 350px;
+	width: 350px;
+	display: inline-block;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	background-size: 350px;
+	overflow: hidden;
+	background-image: url('${(props) => props.img}');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: ${S.colorWhite};
+`
+
+export const MiniatureLink = styled.a`text-decoration: none;`
+
+export const BlackBox = styled.div`
+	height: 100%;
+	width: 100%;
+	background-color: #000000;
+	opacity: 0;
+	padding-top: 130px;
+	transition: 1s;
+
+	&:hover {
+		opacity: 0.8;
+		transition: 1s;
+	}
+`
+
+export const BlackBoxText = styled.div`text-align: center;`
+
+export const BlackBoxTextH1 = styled.h1`
+	font-size: 16px;
+	color: ${S.colorContrast};
+	text-transform: uppercase;
+	margin-top: 0;
+`
+
+export const BlackBoxTextH2 = styled.h2`
+	text-transform: none;
+	font-weight: 100;
+	margin-top: 0;
+	color: ${S.colorWhite};
+`
