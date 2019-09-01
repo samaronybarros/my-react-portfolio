@@ -1,8 +1,8 @@
-import mern from './mern.jpeg'
+import mern from './mern.jpg'
 import sam from './sam.jpg'
-import deploy from './deploy.jpeg'
-import git from './git.jpeg'
-import http from './http.jpeg'
-import jwt from './jwt.jpeg'
+import deploy from './deploy.jpg'
+import git from './git.jpg'
+import http from './http.jpg'
+import jwt from './jwt.jpg'
 
 export { sam, mern, deploy, git, http, jwt }
