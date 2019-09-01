@@ -151,8 +151,8 @@ export const BlackBox = styled.div`
 	transition: 1s;
 
 	&:hover {
-		opacity: 0.8;
-		transition: 1s;
+		opacity: 0.85;
+		transition: 0.5s;
 	}
 `
 

@@ -1,19 +1,11 @@
 import React, { Component } from 'react'
-import {
-	MainDiv,
-	MainH1,
-	Miniature,
-	MiniatureLink,
-	BlackBox,
-	BlackBoxText,
-	BlackBoxTextH1,
-	BlackBoxTextH2,
-} from '../styles/Main'
+import { MainDiv, MainH1 } from '../styles/Main'
 
 import { sam, mern, deploy, git, http, jwt } from '../img/blog'
 import Breadcrumbs from './Breadcrumbs'
+import Miniature from './Miniature'
 
-class Curriculum extends Component {
+class Blog extends Component {
 	state = {
 		showCompanies: false,
 	}
@@ -25,79 +17,40 @@ class Curriculum extends Component {
 			<MainDiv>
 				<Breadcrumbs name={'Blog'} />
 				<MainH1>Blog</MainH1>
-
-				<Miniature img={sam}>
-					<MiniatureLink href="/">
-						<BlackBox>
-							<BlackBoxText>
-								<BlackBoxTextH1>First of many</BlackBoxTextH1>
-								<BlackBoxTextH2>26.05.19 - 2 min read</BlackBoxTextH2>
-							</BlackBoxText>
-						</BlackBox>
-					</MiniatureLink>
-				</Miniature>
-
-				<Miniature img={mern}>
-					<MiniatureLink href="/">
-						<BlackBox>
-							<BlackBoxText>
-								<BlackBoxTextH1>
-									How to create your first MERN (MongoDB, Express JS, React JS and Node JS) Stack
-								</BlackBoxTextH1>
-								<BlackBoxTextH2>02.06.19 - 11 min read</BlackBoxTextH2>
-							</BlackBoxText>
-						</BlackBox>
-					</MiniatureLink>
-				</Miniature>
-
-				<Miniature img={git}>
-					<MiniatureLink href="/">
-						<BlackBox>
-							<BlackBoxText>
-								<BlackBoxTextH1>What do I need to know about Git?</BlackBoxTextH1>
-								<BlackBoxTextH2>09.06.19 - 10 min read</BlackBoxTextH2>
-							</BlackBoxText>
-						</BlackBox>
-					</MiniatureLink>
-				</Miniature>
-
-				<Miniature img={jwt}>
-					<MiniatureLink href="/">
-						<BlackBox>
-							<BlackBoxText>
-								<BlackBoxTextH1>
-									Authentication: how to create a NodeJS application using JWT
-								</BlackBoxTextH1>
-								<BlackBoxTextH2>21.06.19 - 8 min read</BlackBoxTextH2>
-							</BlackBoxText>
-						</BlackBox>
-					</MiniatureLink>
-				</Miniature>
-
-				<Miniature img={http}>
-					<MiniatureLink href="/">
-						<BlackBox>
-							<BlackBoxText>
-								<BlackBoxTextH1>HTTP: An overview of web development</BlackBoxTextH1>
-								<BlackBoxTextH2>01.08.19 - 8 min read</BlackBoxTextH2>
-							</BlackBoxText>
-						</BlackBox>
-					</MiniatureLink>
-				</Miniature>
-
-				<Miniature img={deploy}>
-					<MiniatureLink href="/">
-						<BlackBox>
-							<BlackBoxText>
-								<BlackBoxTextH1>How do I deploy my code to Heroku using GitLab CI/CD?</BlackBoxTextH1>
-								<BlackBoxTextH2>18.08.19 - 8 min read</BlackBoxTextH2>
-							</BlackBoxText>
-						</BlackBox>
-					</MiniatureLink>
-				</Miniature>
+				<Miniature img={sam} link={'/'} title={'First of many'} subtitle={'26.05.19 - 2 min read'} />
+				<Miniature
+					img={mern}
+					link={'/'}
+					title={'How to create your first MERN (MongoDB, Express JS, React JS and Node JS) Stack'}
+					subtitle={'02.06.19 - 11 min read'}
+				/>
+				<Miniature
+					img={git}
+					link={'/'}
+					title={'What do I need to know about Git?'}
+					subtitle={'09.06.19 - 10 min read'}
+				/>
+				<Miniature
+					img={jwt}
+					link={'/'}
+					title={'Authentication: how to create a NodeJS application using JWT'}
+					subtitle={'21.06.19 - 8 min read'}
+				/>
+				<Miniature
+					img={http}
+					link={'/'}
+					title={'HTTP: An overview of web development'}
+					subtitle={'01.08.19 - 8 min read'}
+				/>
+				<Miniature
+					img={deploy}
+					link={'/'}
+					title={'How do I deploy my code to Heroku using GitLab CI/CD?'}
+					subtitle={'18.08.19 - 8 min read'}
+				/>
 			</MainDiv>
 		)
 	}
 }
 
-export default Curriculum
+export default Blog
