@@ -6,21 +6,15 @@ import Breadcrumbs from './Breadcrumbs'
 import Miniature from './Miniature'
 
 class Blog extends Component {
-	state = {
-		showCompanies: false,
-	}
-
-	handleShowCompanies = () => this.setState({ showCompanies: !this.state.showCompanies })
-
 	render() {
 		return (
 			<MainDiv>
 				<Breadcrumbs name={'Blog'} />
 				<MainH1>Blog</MainH1>
-				<Miniature img={sam} link={'/'} title={'First of many'} subtitle={'26.05.19 - 2 min read'} />
+				<Miniature img={sam} link={'/blog/first-of-many'} title={'First of many'} subtitle={'26.05.19 - 2 min read'} />
 				<Miniature
 					img={mern}
-					link={'/'}
+					link={'/blog/how-to-create-your-first-mern-stack'}
 					title={'How to create your first MERN (MongoDB, Express JS, React JS and Node JS) Stack'}
 					subtitle={'02.06.19 - 11 min read'}
 				/>

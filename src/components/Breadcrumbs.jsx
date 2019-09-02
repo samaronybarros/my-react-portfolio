@@ -3,13 +3,21 @@ import { BreadCrumbsUl, BreadCrumbsLi, BreadCrumbsLink } from '../styles/Breadcr
 
 class Breadcrumbs extends Component {
 	render() {
-		const { name } = this.props
+		const { name, blog } = this.props
 		return (
 			<BreadCrumbsUl>
 				<BreadCrumbsLi>
 					<BreadCrumbsLink href="/">Home</BreadCrumbsLink>
 				</BreadCrumbsLi>
 				<BreadCrumbsLi>></BreadCrumbsLi>
+				{blog && (
+					<React.Fragment>
+						<BreadCrumbsLi>
+							<BreadCrumbsLink href="/blog">Blog</BreadCrumbsLink>
+						</BreadCrumbsLi>
+						<BreadCrumbsLi>></BreadCrumbsLi>
+					</React.Fragment>
+				)}
 				<BreadCrumbsLi>{name}</BreadCrumbsLi>
 			</BreadCrumbsUl>
 		)

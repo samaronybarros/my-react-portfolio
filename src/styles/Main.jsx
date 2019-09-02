@@ -105,6 +105,14 @@ export const MainCompanyDate = styled.p`
 	font-weight: 200;
 `
 
+export const MainBlogPictureDivCenter = styled.div`text-align: center;`
+
+export const MainBlogPicture = styled.img`
+	margin: 10px 0;
+	height: ${(props) => props.size};
+	width: ${(props) => props.size};
+`
+
 export const MainCurriculumDescription = styled.div`width: 100%;`
 
 export const MainDescription = styled.p`
@@ -141,6 +149,15 @@ export const Miniature = styled.div`
 `
 
 export const MiniatureLink = styled.a`text-decoration: none;`
+
+export const BlogLink = styled.a`
+	color: ${S.colorWhite};
+	font-weight: 600;
+
+	&:hover {
+		color: ${S.colorContrast};
+	}
+`
 
 export const BlackBox = styled.div`
 	height: 100%;
