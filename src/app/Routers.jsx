@@ -6,11 +6,17 @@ import Curriculum from '../pages/Curriculum/container'
 import Blog from '../pages/Blog/container'
 import Contact from '../pages/Contact/container'
 
+import FirstOfMany from '../pages/Blog/Posts/FirstOfMany'
+import HowToCreateYourFirstMERNStack from '../pages/Blog/Posts/HowToCreateYourFirstMERNStack'
+
 class Routers extends Component {
 	render() {
 		return (
 			<Router>
 				<Switch>
+					<Route path="/blog/first-of-many" component={FirstOfMany} />
+					<Route path="/blog/how-to-create-your-first-mern-stack" component={HowToCreateYourFirstMERNStack} />
+
 					<Route path="/" exact component={Home} />
 					<Route path="/curriculum" component={Curriculum} />
 					<Route path="/blog" component={Blog} />
