@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { MainDiv, MainH1, MainParagraph } from '../../../styles/Main'
+import { MainDiv, MainH1, MainParagraph, MainSimpleLink } from '../../../styles/Main'
 
 import NavBar from '../../../components/NavBar'
 import Breadcrumbs from '../../../components/Breadcrumbs'
@@ -44,6 +44,12 @@ class FirstOfMany extends Component {
 					<MainParagraph>
 						Would you like that I should talk about other tools or other subjects? Feel free to tell me about this on
 						the comments.
+					</MainParagraph>
+					<MainParagraph>
+						You also can see this post on {' '}
+						<MainSimpleLink href="https://medium.com/@samarony.barros/first-of-many-896161f9b6b0" target="_blank">
+							Medium
+						</MainSimpleLink>.
 					</MainParagraph>
 				</MainDiv>
 			</React.Fragment>
