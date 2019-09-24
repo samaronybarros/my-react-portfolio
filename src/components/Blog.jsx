@@ -20,7 +20,7 @@ class Blog extends Component {
 				/>
 				<Miniature
 					img={git}
-					link={'/'}
+					link={'/blog/what-do-i-need-to-know-about-git'}
 					title={'What do I need to know about Git?'}
 					subtitle={'09.06.19 - 10 min read'}
 				/>
