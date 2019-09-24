@@ -26,7 +26,7 @@ class Blog extends Component {
 				/>
 				<Miniature
 					img={jwt}
-					link={'/'}
+					link={'/blog/authentication-how-create-nodejs-application-using-jwt'}
 					title={'Authentication: how to create a NodeJS application using JWT'}
 					subtitle={'21.06.19 - 8 min read'}
 				/>

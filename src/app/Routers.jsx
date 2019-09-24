@@ -9,6 +9,7 @@ import Contact from '../pages/Contact/container'
 import FirstOfMany from '../pages/Blog/Posts/FirstOfMany'
 import HowToCreateYourFirstMERNStack from '../pages/Blog/Posts/HowToCreateYourFirstMERNStack'
 import WhatDoINeedKnowAboutGit from '../pages/Blog/Posts/WhatDoINeedKnowAboutGit'
+import AuthenticationHowToCreateANodeJSApplicationUsingJWT from '../pages/Blog/Posts/AuthenticationHowToCreateANodeJSApplicationUsingJWT'
 
 class Routers extends Component {
 	render() {
@@ -18,6 +19,10 @@ class Routers extends Component {
 					<Route path="/blog/first-of-many" component={FirstOfMany} />
 					<Route path="/blog/how-to-create-your-first-mern-stack" component={HowToCreateYourFirstMERNStack} />
 					<Route path="/blog/what-do-i-need-to-know-about-git" component={WhatDoINeedKnowAboutGit} />
+					<Route
+						path="/blog/authentication-how-create-nodejs-application-using-jwt"
+						component={AuthenticationHowToCreateANodeJSApplicationUsingJWT}
+					/>
 
 					<Route path="/" exact component={Home} />
 					<Route path="/curriculum" component={Curriculum} />
