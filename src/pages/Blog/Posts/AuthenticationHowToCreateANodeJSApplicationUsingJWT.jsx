@@ -5,7 +5,7 @@ import NavBar from '../../../components/NavBar'
 import Breadcrumbs from '../../../components/Breadcrumbs'
 import BlogPicture from '../../../components/BlogPicture'
 
-import img1 from '../../../img/blog/git/1.jpeg'
+import img1 from '../../../img/blog/jwt/1.jpeg'
 
 class WhatDoINeedKnowAboutGit extends Component {
 	render() {
