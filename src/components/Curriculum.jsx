@@ -61,7 +61,6 @@ class Curriculum extends Component {
 				<MainParagraph>English - Advanced</MainParagraph>
 				<MainParagraph>French - Intermediate</MainParagraph>
 				<MainParagraph>Spanish - Basic</MainParagraph>
-				<MainParagraph>German - Basic</MainParagraph>
 
 				<MainH2>About me</MainH2>
 				<MainLine />
