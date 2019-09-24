@@ -19,6 +19,10 @@ export const NavBarDiv = styled.div`
 
 	animation-name: ${KFNavBar};
 	animation-duration: 2s;
+
+	@media (max-width: 1000px) {
+		height: ${(props) => (props.show ? 'auto' : null)};
+	}
 `
 
 export const NavBarUl = styled.ul`
@@ -27,13 +31,27 @@ export const NavBarUl = styled.ul`
 	padding-left: 0;
 	text-align: right;
 	height: 50px;
+
+	@media (max-width: 1000px) {
+		height: ${(props) => (props.show ? 'auto' : null)};
+		text-align: ${(props) => (props.show ? 'center' : null)};
+		padding: ${(props) => (props.show ? '0 15%' : null)};
+	}
 `
-export const NavBarLi = styled.ul`
+
+export const NavBarLi = styled.li`
 	display: inline-block;
 	padding: 0 30px;
 	line-height: 50px;
 	font-size: 16px;
 	font-weight: 100;
+
+	@media (max-width: 1000px) {
+		display: ${(props) => (props.show ? 'block' : 'none')};
+		border-bottom: ${(props) => (props.show ? 'solid grey 1px' : null)};
+		width: ${(props) => (props.show ? '100%' : null)};
+		padding: ${(props) => (props.show ? '0' : null)};
+	}
 `
 
 export const NavBarLink = styled.a`
@@ -42,5 +60,22 @@ export const NavBarLink = styled.a`
 
 	&:hover {
 		color: ${S.colorContrast};
+	}
+`
+
+export const NavBar3LineMenu = styled.li`
+	display: none;
+	padding: 0 30px;
+	line-height: 50px;
+	font-size: 26px;
+	font-weight: 200;
+
+	&:hover {
+		color: ${S.colorContrast};
+		cursor: pointer;
+	}
+
+	@media (max-width: 1000px) {
+		display: inline-block;
 	}
 `
