@@ -329,7 +329,7 @@ class Curriculum extends Component {
 						</CompanyDivPicture>
 						<CompanyDivRole>
 							<MainRole>Estácio</MainRole>
-							<MainCompanyName>MBA in Software Engineer</MainCompanyName>
+							<MainCompanyName>MBA in Software Engineering</MainCompanyName>
 							<MainCompanyDate>2017 - 2019</MainCompanyDate>
 							<MainCompanyDate>Fortaleza, Brazil</MainCompanyDate>
 						</CompanyDivRole>

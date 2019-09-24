@@ -74,6 +74,10 @@ export const MainCompanyCollapse = styled.div``
 
 export const MainCompany = styled.div`
 	padding: 10px 0;
+	/* TODO: Think better abou this
+	box-shadow: 1px 2px 4px rgba(255, 255, 255, .5);
+	margin: 25px 0;
+	padding: 10px; */
 
 	@media (max-width: 1000px) {
 		display: block;
@@ -83,7 +87,7 @@ export const MainCompany = styled.div`
 
 export const MainDivInformation = styled.div`
 	display: inline-block;
-	height: 180px;
+	height: auto;
 	vertical-align: top;
 
 	@media (max-width: 1000px) {
@@ -94,6 +98,8 @@ export const MainDivInformation = styled.div`
 
 export const MainCurriculumInformation = styled.div`
 	width: 100%;
+	height: auto;
+
 	@media (max-width: 1000px) {
 		display: block;
 		max-width: 100%;
