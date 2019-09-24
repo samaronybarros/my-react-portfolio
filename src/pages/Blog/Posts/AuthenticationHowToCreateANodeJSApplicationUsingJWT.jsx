@@ -5,7 +5,7 @@ import NavBar from '../../../components/NavBar'
 import Breadcrumbs from '../../../components/Breadcrumbs'
 import BlogPicture from '../../../components/BlogPicture'
 
-import img1 from '../../../img/blog/jwt/1.jpeg'
+import img1 from '../../../img/blog/git/1.jpeg'
 
 class WhatDoINeedKnowAboutGit extends Component {
 	render() {
@@ -13,30 +13,34 @@ class WhatDoINeedKnowAboutGit extends Component {
 			<React.Fragment>
 				<NavBar />
 				<MainDiv>
-					<Breadcrumbs blog name={'What do I need to know about Git?'} />
-					<MainH1>What do I need to know about Git?</MainH1>
+					<Breadcrumbs blog name={'Authentication: how to create a NodeJS application using JWT'} />
+					<MainH1>Authentication: how to create a NodeJS application using JWT</MainH1>
 
 					<BlogPicture img={img1} />
 
-					<MainParagraph>Hi guys,</MainParagraph>
+					<MainParagraph>Hi everyone,</MainParagraph>
 
 					<MainParagraph>
-						In this article, I'll teach you how to use Git in your projects and how you can get improvement work with
-						this amazing tool.
+						In this article, I'll show you how the fundamentals of JSON Web Token (JWT) and how to authenticate the
+						NodeJS APIs with it.
 					</MainParagraph>
-					<MainParagraph>
-						In this tutorial, I’m going to teach you how to create a simple MERN Stack Application.
-					</MainParagraph>
+					<MainParagraph>First of all, we need to know what is the JSON Web Token.</MainParagraph>
 
 					<MainLine />
 					<MainParagraph>I'm still building this page.</MainParagraph>
 					<MainParagraph>
 						Please, I also have this post on{' '}
-						<BlogLink href="https://medium.com/swlh/what-do-i-need-to-know-about-git-5017bde0b572" target="_blank">
+						<BlogLink
+							href="https://medium.com/swlh/authentication-how-to-create-a-nodejs-application-using-jwt-cee8bc5a89fe"
+							target="_blank"
+						>
 							Medium
 						</BlogLink>{' '}
 						and{' '}
-						<BlogLink href="https://www.linkedin.com/pulse/what-do-i-need-know-aboutgit-sam-barros/" target="_blank">
+						<BlogLink
+							href="https://www.linkedin.com/pulse/authentication-how-create-nodejs-application-using-jwt-sam-barros/"
+							target="_blank"
+						>
 							LinkedIn
 						</BlogLink>. Feel free to take a look into them while I'm working here. :D
 					</MainParagraph>

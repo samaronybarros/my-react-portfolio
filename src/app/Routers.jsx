@@ -11,6 +11,7 @@ import HowToCreateYourFirstMERNStack from '../pages/Blog/Posts/HowToCreateYourFi
 import WhatDoINeedKnowAboutGit from '../pages/Blog/Posts/WhatDoINeedKnowAboutGit'
 import AuthenticationHowToCreateANodeJSApplicationUsingJWT from '../pages/Blog/Posts/AuthenticationHowToCreateANodeJSApplicationUsingJWT'
 import HTTPAnOverviewOfEebDevelopment from '../pages/Blog/Posts/HTTPAnOverviewOfEebDevelopment'
+import HowDoIDeployMyCodeToHerokuUsingGitLabCICD from '../pages/Blog/Posts/HowDoIDeployMyCodeToHerokuUsingGitLabCICD'
 
 class Routers extends Component {
 	render() {
@@ -25,6 +26,10 @@ class Routers extends Component {
 						component={AuthenticationHowToCreateANodeJSApplicationUsingJWT}
 					/>
 					<Route path="/blog/http-overview-web-development" component={HTTPAnOverviewOfEebDevelopment} />
+					<Route
+						path="/blog/how-do-i-deploy-my-code-heroku-using-gitlab-cicd"
+						component={HowDoIDeployMyCodeToHerokuUsingGitLabCICD}
+					/>
 
 					<Route path="/" exact component={Home} />
 					<Route path="/curriculum" component={Curriculum} />

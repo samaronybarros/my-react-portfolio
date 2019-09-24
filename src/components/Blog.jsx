@@ -38,7 +38,7 @@ class Blog extends Component {
 				/>
 				<Miniature
 					img={deploy}
-					link={'/'}
+					link={'/blog/how-do-i-deploy-my-code-heroku-using-gitlab-cicd'}
 					title={'How do I deploy my code to Heroku using GitLab CI/CD?'}
 					subtitle={'18.08.19 - 8 min read'}
 				/>
