@@ -10,6 +10,7 @@ import FirstOfMany from '../pages/Blog/Posts/FirstOfMany'
 import HowToCreateYourFirstMERNStack from '../pages/Blog/Posts/HowToCreateYourFirstMERNStack'
 import WhatDoINeedKnowAboutGit from '../pages/Blog/Posts/WhatDoINeedKnowAboutGit'
 import AuthenticationHowToCreateANodeJSApplicationUsingJWT from '../pages/Blog/Posts/AuthenticationHowToCreateANodeJSApplicationUsingJWT'
+import HTTPAnOverviewOfEebDevelopment from '../pages/Blog/Posts/HTTPAnOverviewOfEebDevelopment'
 
 class Routers extends Component {
 	render() {
@@ -23,6 +24,7 @@ class Routers extends Component {
 						path="/blog/authentication-how-create-nodejs-application-using-jwt"
 						component={AuthenticationHowToCreateANodeJSApplicationUsingJWT}
 					/>
+					<Route path="/blog/http-overview-web-development" component={HTTPAnOverviewOfEebDevelopment} />
 
 					<Route path="/" exact component={Home} />
 					<Route path="/curriculum" component={Curriculum} />

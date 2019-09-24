@@ -32,7 +32,7 @@ class Blog extends Component {
 				/>
 				<Miniature
 					img={http}
-					link={'/'}
+					link={'/blog/http-overview-web-development'}
 					title={'HTTP: An overview of web development'}
 					subtitle={'01.08.19 - 8 min read'}
 				/>
