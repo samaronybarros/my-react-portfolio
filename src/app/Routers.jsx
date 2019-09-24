@@ -12,6 +12,7 @@ import WhatDoINeedKnowAboutGit from '../pages/Blog/Posts/WhatDoINeedKnowAboutGit
 import AuthenticationHowToCreateANodeJSApplicationUsingJWT from '../pages/Blog/Posts/AuthenticationHowToCreateANodeJSApplicationUsingJWT'
 import HTTPAnOverviewOfEebDevelopment from '../pages/Blog/Posts/HTTPAnOverviewOfEebDevelopment'
 import HowDoIDeployMyCodeToHerokuUsingGitLabCICD from '../pages/Blog/Posts/HowDoIDeployMyCodeToHerokuUsingGitLabCICD'
+import HowToMakeTestsUsingChaiAndMocha from '../pages/Blog/Posts/HowToMakeTestsUsingChaiAndMocha'
 
 class Routers extends Component {
 	render() {
@@ -30,6 +31,7 @@ class Routers extends Component {
 						path="/blog/how-do-i-deploy-my-code-heroku-using-gitlab-cicd"
 						component={HowDoIDeployMyCodeToHerokuUsingGitLabCICD}
 					/>
+					<Route path="/blog/how-make-tests-using-chai-mocha" component={HowToMakeTestsUsingChaiAndMocha} />
 
 					<Route path="/" exact component={Home} />
 					<Route path="/curriculum" component={Curriculum} />

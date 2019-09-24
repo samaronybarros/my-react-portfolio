@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { MainDiv, MainH1 } from '../styles/Main'
 
-import { sam, mern, deploy, git, http, jwt } from '../img/blog'
+import { sam, mern, deploy, git, http, jwt, chaiMocha } from '../img/blog'
 import Breadcrumbs from './Breadcrumbs'
 import Miniature from './Miniature'
 
@@ -41,6 +41,12 @@ class Blog extends Component {
 					link={'/blog/how-do-i-deploy-my-code-heroku-using-gitlab-cicd'}
 					title={'How do I deploy my code to Heroku using GitLab CI/CD?'}
 					subtitle={'18.08.19 - 8 min read'}
+				/>
+				<Miniature
+					img={chaiMocha}
+					link={'/blog/how-make-tests-using-chai-mocha'}
+					title={'How to make tests using chai and mocha?'}
+					subtitle={'31.08.19 - 7 min read'}
 				/>
 			</MainDiv>
 		)
