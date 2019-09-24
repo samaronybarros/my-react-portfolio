@@ -17,6 +17,11 @@ export const MainDiv = styled.div`
 
 	animation-name: ${KFMain};
 	animation-duration: 2s;
+
+	@media (max-width: 1000px) {
+		padding: 10px 5% 40px 5%;
+		text-align: center;
+	}
 `
 
 export const MainLine = styled.hr``
@@ -25,6 +30,12 @@ export const CVPicture = styled.img`
 	float: left;
 	padding-right: 20px;
 	width: 200px;
+
+	@media (max-width: 1000px) {
+		float: none;
+		max-width: 80%;
+		margin: 0;
+	}
 `
 
 export const MainH1 = styled.h1`
@@ -52,26 +63,52 @@ export const MainParagraph = styled.p`
 	text-align: justify;
 	font-weight: 100;
 	line-height: 24px;
+
+	@media (max-width: 1000px) {
+		line-height: 30px;
+		text-align: center;
+	}
 `
 
 export const MainCompanyCollapse = styled.div``
 
 export const MainCompany = styled.div`
 	padding: 10px 0;
-	max-width: 80%;
+
+	@media (max-width: 1000px) {
+		display: block;
+		max-width: 100%;
+	}
 `
 
 export const MainDivInformation = styled.div`
 	display: inline-block;
-	height: 125px;
+	height: 180px;
 	vertical-align: top;
+
+	@media (max-width: 1000px) {
+		display: block;
+		max-width: 100%;
+	}
 `
 
-export const MainCurriculumInformation = styled.div`width: 100%;`
+export const MainCurriculumInformation = styled.div`
+	width: 100%;
+	@media (max-width: 1000px) {
+		display: block;
+		max-width: 100%;
+	}
+`
 
 export const CompanyDivPicture = styled(MainDivInformation)`
 	width: 20%;
 	text-align: left;
+
+	@media (max-width: 1000px) {
+		height: auto;
+		width: 100%;
+		text-align: center;
+	}
 `
 
 export const CompanyImg = styled.img`
@@ -84,6 +121,14 @@ export const CompanyDivRole = styled(MainDivInformation)`
 	width: 80%;
 	text-align: left;
 	line-height: 10px;
+
+	@media (max-width: 1000px) {
+		line-height: 10px;
+		text-align: center;
+		width: 100%;
+		height: auto;
+		padding: 2.5% 0;
+	}
 `
 
 export const MainRole = styled.p`
@@ -91,6 +136,10 @@ export const MainRole = styled.p`
 	font-size: 18px;
 	text-align: justify;
 	font-weight: 400;
+
+	@media (max-width: 1000px) {
+		text-align: center;
+	}
 `
 
 export const MainCompanyName = styled.p`
@@ -98,6 +147,10 @@ export const MainCompanyName = styled.p`
 	font-size: 16px;
 	text-align: justify;
 	font-weight: 200;
+
+	@media (max-width: 1000px) {
+		text-align: center;
+	}
 `
 
 export const MainCompanyDate = styled.p`
@@ -105,6 +158,10 @@ export const MainCompanyDate = styled.p`
 	font-size: 13px;
 	text-align: justify;
 	font-weight: 200;
+
+	@media (max-width: 1000px) {
+		text-align: center;
+	}
 `
 
 export const MainBlogPictureDivCenter = styled.div`text-align: center;`
@@ -115,7 +172,10 @@ export const MainBlogPicture = styled.img`
 	width: ${(props) => props.size};
 `
 
-export const MainCurriculumDescription = styled.div`width: 100%;`
+export const MainCurriculumDescription = styled.div`
+	width: 100%;
+	max-width: 100%;
+`
 
 export const MainDescription = styled.p`
 	color: ${S.colorContrast};
@@ -124,14 +184,21 @@ export const MainDescription = styled.p`
 	font-weight: 400;
 	text-transform: uppercase;
 	margin-bottom: -10px;
+	@media (max-width: 1000px) {
+		text-align: center;
+	}
 `
 
 export const MainTextDescription = styled.p`
 	color: ${S.colorWhite};
-	font-size: 14px;
+	font-size: 18px;
 	text-align: justify;
 	font-weight: 100;
 	line-height: 24px;
+
+	@media (max-width: 1000px) {
+		text-align: center;
+	}
 `
 
 export const MainButton = styled.button`font-size: 14px;`

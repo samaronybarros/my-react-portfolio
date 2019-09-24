@@ -229,7 +229,7 @@ class Curriculum extends Component {
 					<MainCurriculumDescription>
 						<MainDescription>Description</MainDescription>
 						<MainTextDescription>
-							"Tá de quanto? is a tool for consulting and comparing prices on Supermarkets, that is the product
+							"Tá de quanto?" is a tool for consulting and comparing prices on Supermarkets, that is the product
 							developed by Dingo Innovations.
 						</MainTextDescription>
 						<MainTextDescription>
