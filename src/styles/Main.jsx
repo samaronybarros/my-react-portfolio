@@ -54,6 +54,8 @@ export const MainParagraph = styled.p`
 	line-height: 24px;
 `
 
+export const MainCompanyCollapse = styled.div``
+
 export const MainCompany = styled.div`
 	padding: 10px 0;
 	max-width: 80%;
@@ -187,4 +189,13 @@ export const BlackBoxTextH2 = styled.h2`
 	font-weight: 100;
 	margin-top: 0;
 	color: ${S.colorWhite};
+`
+
+export const MainSimpleLink = styled.a`
+	color: ${S.colorWhite};
+	font-weight: 800;
+
+	&:hover {
+		color: ${S.colorContrast};
+	}
 `
