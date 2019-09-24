@@ -9,14 +9,11 @@ import {
 	CompanyDivPicture,
 	CompanyImg,
 	CompanyDivRole,
-	MainCurriculumDescription,
-	MainDescription,
-	MainTextDescription,
 } from '../styles/Main'
 
-class Company extends Component {
+class Institution extends Component {
 	render() {
-		const { image, role, companyName, period, city, activities } = this.props
+		const { image, course, institutionName, period, city } = this.props
 		return (
 			<MainCompany>
 				<MainCurriculumInformation>
@@ -24,20 +21,15 @@ class Company extends Component {
 						<CompanyImg src={image} />
 					</CompanyDivPicture>
 					<CompanyDivRole>
-						<MainRole>{role}</MainRole>
-						<MainCompanyName>{companyName}</MainCompanyName>
+						<MainRole>{institutionName}</MainRole>
+						<MainCompanyName>{course}</MainCompanyName>
 						<MainCompanyDate>{period}</MainCompanyDate>
 						<MainCompanyDate>{city}</MainCompanyDate>
 					</CompanyDivRole>
 				</MainCurriculumInformation>
-				<MainCurriculumDescription>
-					<MainDescription>Description</MainDescription>
-					{activities &&
-						activities.map((activity, index) => <MainTextDescription key={index}>{activity}</MainTextDescription>)}
-				</MainCurriculumDescription>
 			</MainCompany>
 		)
 	}
 }
 
-export default Company
+export default Institution

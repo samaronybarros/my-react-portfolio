@@ -159,9 +159,6 @@ export const MainCompanyName = styled.p`
 	}
 `
 
-export const MainCompanyCity = styled(MainCompanyName)`
-`
-
 export const MainCompanyDate = styled.p`
 	color: ${S.colorGrey};
 	font-size: 13px;
