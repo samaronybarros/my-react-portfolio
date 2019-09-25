@@ -70,6 +70,40 @@ export const MainParagraph = styled.p`
 	}
 `
 
+export const MainQuotation = styled.p`
+	color: ${S.colorWhite};
+	font-size: 18px;
+	text-align: justify;
+	font-weight: 100;
+	line-height: 24px;
+	font-style: italic;
+	border-left: 5px solid ${S.colorWhite};
+	padding-left: 10px;
+
+	@media (max-width: 1000px) {
+		line-height: 30px;
+		text-align: center;
+	}
+`
+
+export const MainUl = styled.ul`
+	color: ${S.colorWhite};
+	font-size: 18px;
+	text-align: justify;
+	font-weight: 100;
+	line-height: 24px;
+`
+
+export const MainLi = styled.li``
+
+export const MainBlogTitle = styled.h1`
+	color: ${S.colorWhite};
+	font-size: 32px;
+	text-align: left;
+	font-weight: 800;
+	line-height: 24px;
+`
+
 export const MainCompanyCollapse = styled.div``
 
 export const MainCompany = styled.div`
