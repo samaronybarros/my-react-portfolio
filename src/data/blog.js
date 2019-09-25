@@ -13,7 +13,6 @@ const posts = [
 		title: 'How to create your first MERN (MongoDB, Express JS, React JS and Node JS) Stack',
 		subtitle: '02.06.19 - 11 min read',
 	},
-	,
 	{
 		img: git,
 		link: '/blog/what-do-i-need-to-know-about-git',
@@ -26,7 +25,6 @@ const posts = [
 		title: 'Authentication: how to create a NodeJS application using JWT',
 		subtitle: '21.06.19 - 8 min read',
 	},
-	,
 	{
 		img: http,
 		link: '/blog/http-overview-web-development',
