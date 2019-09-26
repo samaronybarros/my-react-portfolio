@@ -6,6 +6,7 @@ export const CodeBlockDiv = styled.div`
 	width: 100%;
 	height: auto;
 	padding: 2.5px 0 2.5px 10px;
+	margin-bottom: 35px;
 `
 
 export const CodeBlockCode = styled.p`

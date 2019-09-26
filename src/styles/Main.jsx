@@ -104,6 +104,14 @@ export const MainBlogTitle = styled.h1`
 	line-height: 24px;
 `
 
+export const MainBlogSubTitle = styled(MainBlogTitle)`
+	font-size: 26px;
+`
+
+export const MainBlogSubSubTitle = styled(MainBlogTitle)`
+	font-size: 22px;
+`
+
 export const MainCompanyCollapse = styled.div``
 
 export const MainCompany = styled.div`
