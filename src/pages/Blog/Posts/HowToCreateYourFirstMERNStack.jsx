@@ -30,6 +30,13 @@ import img8 from '../../../img/blog/mern/8.gif'
 import img9 from '../../../img/blog/mern/9.gif'
 import img10 from '../../../img/blog/mern/10.gif'
 import img11 from '../../../img/blog/mern/11.png'
+import img12 from '../../../img/blog/mern/12.png'
+import img13 from '../../../img/blog/mern/13.gif'
+import img14 from '../../../img/blog/mern/14.png'
+import img15 from '../../../img/blog/mern/15.gif'
+import img16 from '../../../img/blog/mern/16.gif'
+import img17 from '../../../img/blog/mern/17.gif'
+import img18 from '../../../img/blog/mern/18.jpeg'
 
 class HowToCreateYourFirstMERNStack extends Component {
 	render() {
@@ -351,7 +358,10 @@ class HowToCreateYourFirstMERNStack extends Component {
 					</MainParagraph>
 					<MainQuotation>Hey Sam, why did you choose the port 8000?</MainQuotation>
 					<MainParagraph>
-						Nothing special, I like this number and I currently use 3000 to backend and 8000 to frontend. 🤷‍♂️
+						Nothing special, I like this number and I currently use 3000 to backend and 8000 to frontend.{' '}
+						<span role="img" aria-label="shrug">
+							🤷🏻‍
+						</span>
 					</MainParagraph>
 					<MainParagraph
 					>{`To change the port we need to change it on client/package.json. Include PORT=<port number> in the file.`}</MainParagraph>
@@ -364,7 +374,12 @@ class HowToCreateYourFirstMERNStack extends Component {
 					<MainParagraph>
 						For now, you don’t need to worry about these files, maybe in another post, I can explain them.
 					</MainParagraph>
-					<MainQuotation>Sam, it’s boring, when will I see my application running? 😩</MainQuotation>
+					<MainQuotation>
+						Sam, it’s boring, when will I see my application running?{' '}
+						<span role="img" aria-label="cmon">
+							😩
+						</span>
+					</MainQuotation>
 					<MainParagraph>
 						Patience my dear friend, as Axl Rose said: “All we need is just a little patience”. In a few minutes, you’ll
 						see your App running.
@@ -409,14 +424,136 @@ class HowToCreateYourFirstMERNStack extends Component {
 						Move the <i>App.js</i> file to the app directory, but renaming to index.js.
 					</MainParagraph>
 					<CodeBlock>$ mv App.js app/index.js</CodeBlock>
-					<MainParagraph>Now we can code. 🙂</MainParagraph>
-					<MainParagraph>First of all, update our file client/src/index.js for the following code.</MainParagraph>
-					<MainParagraph>XXXX</MainParagraph>
-
-					<MainLine />
-					<MainParagraph>I'm still building this page.</MainParagraph>
 					<MainParagraph>
-						Please, I also have this post on{' '}
+						Now we can code.{' '}
+						<span role="img" aria-label="ok">
+							🙂
+						</span>
+					</MainParagraph>
+					<MainParagraph>
+						First of all, update our file <i>client/src/index.js</i> for the following code.
+					</MainParagraph>
+					<Gist id="7c1d4e48be5fa6d5cd27ef1e10b18ccc" />
+					<MainParagraph>
+						After this, we’ll develop the header of the application. Now, we’ll developer the components of our project.
+						Create the new files NavBar.jsx, Logo.jsx, and Links.jsx.
+					</MainParagraph>
+					<CodeBlock>$ touch components/NavBar.jsx components/Logo.jsx components/Links.jsx</CodeBlock>
+					<MainQuotation>
+						Wait a minute Sam! Now I’m seeing instead of JS you’re using JSX. Why are doing this?
+					</MainQuotation>
+					<MainParagraph>
+						Simple, <b>JSX</b> is a notation that Reacts chose to identify a <b>J</b>ava<b>S</b>cript’s e<b>X</b>tension.
+						It’s recommended to use it with React to describe what the UI should look like.
+					</MainParagraph>
+					<MainParagraph>Knowing this, let’s create our files.</MainParagraph>
+					<Gist id="8ab5511fa0bdda9befaf69aeadcdb8b0" />
+					<Gist id="73d965275e69946c02cabf5cd5775618" />
+					<Gist id="02cf7dd32287b9e6f471f41d18cc1a15" />
+					<MainParagraph>
+						You can see how clean are our files. Do you remember that we created the file components/index.js? This file
+						we export our components, it will allow us to import them in other files using the notation:
+					</MainParagraph>
+					<CodeBlock>
+						<b>import</b> {'{ blabla }'} <b>from</b> './components'
+					</CodeBlock>
+					<MainParagraph>Look at how simple it’s.</MainParagraph>
+					<Gist id="df4c565b7312b9f217cc80c1ac92ca66" />
+					<MainParagraph>
+						Updating <i>app/index.js</i>. We’re able to see the growth of the project.
+					</MainParagraph>
+					<Gist id="4172d7212806ceb133a1202b8b8c4820" />
+					<BlogPicture img={img12} />
+					<MainLine />
+					<MainBlogSubTitle>2.1. Integrating BE and FE</MainBlogSubTitle>
+					<MainParagraph>Now we'll learn how to integrate the backend with our Frontend.</MainParagraph>
+					<MainParagraph>
+						First of all, let's update the file <i>api/index.js</i>.
+					</MainParagraph>
+					<Gist id="6f7dfad88ddaaec910948e35c150f824" />
+					<MainParagraph>
+						Amazing! Now we can develop our routes. For this, we'll need to update the file app/index.js adding the
+						routes.
+					</MainParagraph>
+					<Gist id="6f7dfad88ddaaec910948e35c150f824" />
+					<MainParagraph>6b186c741c86c97e7bbf2d208fc37758</MainParagraph>
+					<MainParagraph>
+						On pages folder, let's create the files that will do the role of each application's page: MoviesList.jsx,
+						MoviesInsert.jsx and MoviesUpdate.jsx.
+					</MainParagraph>
+					<CodeBlock>
+						$ cd pages <br />
+						$ touch MoviesList.jsx MoviesInsert.jsx MoviesUpdate.jsx
+					</CodeBlock>
+					<MainParagraph>
+						For now, let's create simples files where you can see the page's transition when you click in each link of
+						the NavBar.
+					</MainParagraph>
+					<Gist id="81313ab05038686e6711949a1dbc22ac" />
+					<Gist id="921f2e0e170d0a5c43138ddf91b7001e" />
+					<Gist id="c083a0d38b600185967140086a32e833" />
+					<Gist id="6dd6f43a27e8b4b8c690406425cb222c" />
+					<MainParagraph>Look at how simple it is.</MainParagraph>
+					<BlogPicture img={img13} />
+					<MainQuotation>
+						Hey Sam, I've seen something strange. In the code of the route to update the movie you put ":id" with a
+						colon, but in the browser, you just put without the colon… why?
+					</MainQuotation>
+					<MainParagraph>
+						Because the colon means that React is waiting for a variable, that is, on the <b>params</b> object we have a
+						variable called <b>id</b>. Further ahead, you'll see something like this.
+					</MainParagraph>
+					<CodeBlock>
+						<i>this</i>.props.match.params.id
+					</CodeBlock>
+					<MainParagraph>
+						OK, let's edit our file to get the movies from the database: <i>MoviesList.jsx</i>.
+					</MainParagraph>
+					<Gist id="ca37f578756ee130a8903ee3ccd67cad" />
+					<BlogPicture img={img14} />
+					<MainParagraph>
+						Awesome, in this list let's include two more things, these things will be buttons. One button to{' '}
+						<b>delete</b> e another button to <b>update</b>.
+					</MainParagraph>
+					<Gist id="e5ddc36849c8b283f56c0d95243ca5b2" />
+					<BlogPicture img={img15} />
+					<MainParagraph>
+						As you can see, now we're able to delete a movie, but we still not able to update it, because we haven't
+						finished the component yet.
+					</MainParagraph>
+					<MainParagraph>Before, to develop the update page, let's create the insertion page.</MainParagraph>
+					<Gist id="e6af78e631cf277a8ceec811def6250e" />
+					<BlogPicture img={img16} />
+					<MainParagraph>And finally, let's create the update file.</MainParagraph>
+					<Gist id="d27da28ef7f94219c4ba0404d998a87d" />
+					<BlogPicture img={img17} />
+					<MainBlogTitle>3. Conclusion</MainBlogTitle>
+					<BlogPicture img={img18} />
+					<MainParagraph>
+						And that's it, friend. In this article, you have seen the structure to build a MERN application using
+						diverse libraries provided by an amazing community around the world.
+					</MainParagraph>
+					<MainParagraph>
+						In this article, my intuit was to keep the things simple for your understanding. This is a project that you
+						can do many enhancements.
+					</MainParagraph>
+					<MainParagraph>
+						Maybe you can try, for instance, create a better structure to include the time of the movies or you can
+						improve the code to put the update and insertion movie in the same file, what about to create a new entity
+						called customer and create the same REST operation for it? You can add a lot of new features for this. If
+						you prefer, tell me on the comments.
+					</MainParagraph>
+					<MainParagraph>
+						I hope that I have contributed to your knowledge. Feel free to tell me what I should improve to write better
+						articles.
+					</MainParagraph>
+					<MainParagraph>
+						The complete project you can find in my GitHub and search for the movies-app repository.
+					</MainParagraph>
+					<MainParagraph>Thank you for your patience in reading this. See you in the next post.</MainParagraph>
+					<MainLine />
+					<MainParagraph>
+						You also can see this post on {' '}
 						<BlogLink
 							href="https://medium.com/swlh/how-to-create-your-first-mern-mongodb-express-js-react-js-and-node-js-stack-7e8b20463e66"
 							target="_blank"
@@ -429,7 +566,7 @@ class HowToCreateYourFirstMERNStack extends Component {
 							target="_blank"
 						>
 							LinkedIn
-						</BlogLink>. Feel free to take a look into them while I'm working here. :D
+						</BlogLink>.
 					</MainParagraph>
 				</MainDiv>
 			</React.Fragment>
