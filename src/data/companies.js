@@ -22,7 +22,7 @@ const mainCompanies = [
 		period: 'Oct 2018 - Feb 2019',
 		city: 'Berlin, Germany',
 		activities: [
-			`Developing a platform that makes the management of clubs and associations easy and economical using
+			`I was responsible for developing a platform that makes the management of clubs and associations easy and economical using
                 ReactJS, NodeJS, Express, and MongoDB. Besides, developing the relationship network among member and clubs
                 using the same technologies above.`,
 		],

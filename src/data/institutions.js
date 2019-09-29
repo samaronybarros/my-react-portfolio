@@ -10,8 +10,8 @@ const institutions = [
 	},
 	{
 		image: uece,
-		course: 'State University of Ceara',
-		institutionName: 'Estácio',
+		course: 'Computer Science',
+		institutionName: 'State University of Ceara',
 		period: '2007 - 2012',
 		city: 'Fortaleza, Brazil',
 	},
