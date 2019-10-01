@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Navbar from '../../../components/NavBar'
+import Footer from '../../../components/Footer'
 import { MainDiv, MainH1 } from '../../../styles/Main'
 import Breadcrumbs from '../../../components/Breadcrumbs'
 import Miniature from '../../../components/Miniature'
@@ -19,6 +20,7 @@ class BlogView extends Component {
 						<Miniature img={post.img} link={post.link} title={post.title} subtitle={post.subtitle} />
 					))}
 				</MainDiv>
+				<Footer />
 			</React.Fragment>
 		)
 	}

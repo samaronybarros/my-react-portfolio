@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
 
-import { MainDiv, MainH1, MainH3, MainParagraph } from '../../../styles/Main'
+import { ContactDiv, MainH1, MainH3, MainParagraph } from '../../../styles/Main'
 import { SocialImg, SocialLink } from '../../../styles/Contact'
 
 import Navbar from '../../../components/NavBar'
+import Footer from '../../../components/Footer'
 import Breadcrumbs from '../../../components/Breadcrumbs'
 //https://www.iconfinder.com/iconsets/black-white-social-media
 import { facebook, linkedin, github } from '../../../img/social'
@@ -13,7 +14,7 @@ class CurriculumView extends Component {
 		return (
 			<React.Fragment>
 				<Navbar />
-				<MainDiv>
+				<ContactDiv>
 					<Breadcrumbs name={'Contact'} />
 
 					<MainH1>Contact</MainH1>
@@ -35,7 +36,8 @@ class CurriculumView extends Component {
 					<SocialLink href={'#'} target={'_blank'}>
 						<SocialImg src={github} />
 					</SocialLink>
-				</MainDiv>
+				</ContactDiv>
+				<Footer />
 			</React.Fragment>
 		)
 	}

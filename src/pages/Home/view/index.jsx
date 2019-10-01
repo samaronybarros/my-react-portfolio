@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Navbar from '../../../components/NavBar'
+import Footer from '../../../components/Footer'
 
 import {
 	CoverMain,
@@ -28,6 +29,7 @@ class HomeView extends Component {
 						<ProfileTitleH2>Full Stack Engineer - Backend Engineer - Software Architect</ProfileTitleH2>
 					</ProfileTitle>
 				</CoverMain>
+				<Footer />
 			</React.Fragment>
 		)
 	}

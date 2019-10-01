@@ -24,6 +24,10 @@ export const MainDiv = styled.div`
 	}
 `
 
+export const ContactDiv = styled(MainDiv)`
+height: 92vh;
+`
+
 export const MainLine = styled.hr``
 
 export const CVPicture = styled.img`

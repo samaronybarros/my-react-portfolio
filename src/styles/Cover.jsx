@@ -23,7 +23,10 @@ const KFProfileTitle = keyframes`
     }
 `
 
-export const CoverMain = styled.div`color: ${S.colorWhite};`
+export const CoverMain = styled.div`
+	color: ${S.colorWhite};
+	height: 92vh;
+`
 
 export const CoverSpan = styled.span`
 	color: ${S.colorContrast};
