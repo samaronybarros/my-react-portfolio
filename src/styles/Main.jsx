@@ -25,7 +25,9 @@ export const MainDiv = styled.div`
 `
 
 export const ContactDiv = styled(MainDiv)`
-height: 92vh;
+	flex: 1;
+	align-items: center;
+	justify-content: center;
 `
 
 export const MainLine = styled.hr``

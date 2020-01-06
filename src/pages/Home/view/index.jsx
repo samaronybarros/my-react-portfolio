@@ -9,14 +9,15 @@ import {
 	ProfilePictureImg,
 	ProfileTitle,
 	ProfileTitleH1,
-	ProfileTitleH2,
+	ProfileTitleH2
 } from '../../../styles/Cover'
+import { Wrapper } from '../../../styles/Wrapper'
 import picture from '../../../img/sam-picture.jpg'
 
 class HomeView extends Component {
 	render() {
 		return (
-			<React.Fragment>
+			<Wrapper>
 				<Navbar />
 				<CoverMain>
 					<ProfilePicture>
@@ -30,7 +31,7 @@ class HomeView extends Component {
 					</ProfileTitle>
 				</CoverMain>
 				<Footer />
-			</React.Fragment>
+			</Wrapper>
 		)
 	}
 }

@@ -25,7 +25,7 @@ const KFProfileTitle = keyframes`
 
 export const CoverMain = styled.div`
 	color: ${S.colorWhite};
-	height: 92vh;
+	flex: 1;
 `
 
 export const CoverSpan = styled.span`
