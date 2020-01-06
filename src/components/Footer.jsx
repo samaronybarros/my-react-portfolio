@@ -1,9 +1,13 @@
 import React, { Component } from 'react'
-import { FooterDiv } from '../styles/Footer'
+import { FooterDiv, FooterText } from '../styles/Footer'
 
 class Footer extends Component {
 	render() {
-		return <FooterDiv>Sam Barros 2019 © All Rights Reserved</FooterDiv>
+		return (
+			<FooterDiv>
+				<FooterText>Sam Barros 2020 © All Rights Reserved</FooterText>
+			</FooterDiv>
+		)
 	}
 }
 

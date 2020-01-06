@@ -7,4 +7,10 @@ export const FooterDiv = styled.div`
 	width: 100%;
 	text-align: center;
 	background-color: #1c1c1c;
+	height: 5vh;
+	align-items: center;
+	justify-content: center;
+	display: flex;
 `
+
+export const FooterText = styled.div`align-content: center;`
