@@ -7,12 +7,13 @@ import Navbar from '../../../components/NavBar'
 import Footer from '../../../components/Footer'
 import Breadcrumbs from '../../../components/Breadcrumbs'
 //https://www.iconfinder.com/iconsets/black-white-social-media
-import { facebook, linkedin, github } from '../../../img/social'
+import { facebook, linkedin, github, instagram } from '../../../img/social'
+import { Wrapper } from '../../../styles/Wrapper'
 
 class CurriculumView extends Component {
 	render() {
 		return (
-			<React.Fragment>
+			<Wrapper>
 				<Navbar />
 				<ContactDiv>
 					<Breadcrumbs name={'Contact'} />
@@ -27,18 +28,21 @@ class CurriculumView extends Component {
 
 					<MainH3>Social Network:</MainH3>
 
-					<SocialLink href={'#'} target={'_blank'}>
+					<SocialLink href={'https://www.facebook.com/samarony.barros'} target={'_blank'}>
 						<SocialImg src={facebook} />
 					</SocialLink>
-					<SocialLink href={'#'} target={'_blank'}>
+					<SocialLink href={'https://www.linkedin.com/in/sam-barros/'} target={'_blank'}>
 						<SocialImg src={linkedin} />
 					</SocialLink>
-					<SocialLink href={'#'} target={'_blank'}>
+					<SocialLink href={'https://github.com/samaronybarros'} target={'_blank'}>
 						<SocialImg src={github} />
+					</SocialLink>
+					<SocialLink href={'https://www.instagram.com/sam_barros_/'} target={'_blank'}>
+						<SocialImg src={instagram} />
 					</SocialLink>
 				</ContactDiv>
 				<Footer />
-			</React.Fragment>
+			</Wrapper>
 		)
 	}
 }
