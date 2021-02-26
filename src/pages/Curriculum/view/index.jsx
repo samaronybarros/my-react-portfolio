@@ -172,19 +172,22 @@ class CurriculumView extends Component {
           <MainH2>Technical Skills</MainH2>
           <MainLine />
 
+          <MainH3>8+ years:</MainH3>
+          <MainParagraph>
+            JavaScript, NodeJS, ReactJS, MongoDB, Sequelize, and Bootstrap.
+          </MainParagraph>
           <MainH3>7+ years:</MainH3>
           <MainParagraph>
             Java, PHP, Scrum, MS SQL, Oracle, MySql, and PostgreSQL.
           </MainParagraph>
-          <MainH3>6+ years:</MainH3>
-          <MainParagraph>
-            JavaScript, NodeJS, ReactJS, MongoDB, Sequelize, and Bootstrap.
-          </MainParagraph>
           <MainH3>4+ years:</MainH3>
-          <MainParagraph>C, C++, Shell Script and Git.</MainParagraph>
+          <MainParagraph>
+            Typescript, Android, C, C++, Shell Script, and Git.
+          </MainParagraph>
           <MainH3>2+ years:</MainH3>
-          <MainParagraph>Typescript, Android, Ruby, Objective-C.</MainParagraph>
+          <MainParagraph>Ruby, Python, Objective-C.</MainParagraph>
         </MainDiv>
+
         <Footer />
       </React.Fragment>
     );
